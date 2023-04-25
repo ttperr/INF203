@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./test2.js" type="text/javascript"></script>
+    <title>Test 2</title>
+</head>
+
+<body>
+    <!-- button bar with “show txt”, “add element”, “remove element”, “clear” and “restore” -->
+    <div id="buttonBar">
+        <button id="BUTSHOW" type="button" onclick="showText()">Show txt</button>
+        <button id="BUT_ADD" type="button" onclick="showAdd()">Add element</button>
+        <button id="REMOVE" type="button" onclick="showRemove()">Remove element</button>
+        <button id="CLEAR" type="button" onclick="clearData()">Clear</button>
+        <button id="RESTORE" type="button" onclick="restoreData()">Restore</button>
+
+        <button id="PIEBUTTON" type="button" onclick="showPieChart()">Show Pie Chart</button>
+        <button id="LOC_PIEB" type="button" onclick="showLocalPieChart()">Show Local Pie Chart</button>
+    </div>
+
+    <form style="visibility:hidden" id="addForm">
+        <input type="text" id="titleTF" placeholder="title">
+        <input type="number" id="valueTF" placeholder="value">
+        <input type="text" id="colorTF" placeholder="color">
+        <button id="SENDADD" onclick=sendAdd()>Add</button>
+    </form>
+
+    <form style="visibility:hidden" id="removeForm">
+        <input type="number" id="indexTF" placeholder="index">
+        <button id="SENDREM" onclick=sendRem()>Remove</button>
+    </form>
+
+    <div id="MAINSHOW"></div>
+    <div id="pieDiv"></div>
+</body>
+
+</html>

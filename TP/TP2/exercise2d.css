@@ -1,0 +1,27 @@
+#id1 {
+    border: solid;
+    border-width: 1px;
+    padding: 9px;
+}
+
+img {
+    float: left;
+    margin-right: 11px;
+}
+
+#id3 {
+    background-color: slategrey;
+    margin: 10px
+}
+
+/* 
+Change the CSS of this class for this div to be displayed in front of other divs, at the position 116px, 116px (relative to the top left of the page) with a width and height of 485px
+ */
+.dstyle {
+    position: absolute;
+    top: 116px;
+    left: 116px;
+    width: 485px;
+    height: 485px;
+    z-index: 1;
+}

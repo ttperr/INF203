@@ -1,0 +1,31 @@
+#id1 {
+    border: solid;
+    border-width: 1px;
+    padding: 9px;
+}
+
+img {
+    float: left;
+    margin-right: 11px;
+}
+
+#id3 {
+    background-color: slategrey;
+    margin: 10px
+}
+
+/* 
+Change the CSS of this class so that this div disappears when you click on it. Note: the div comes back when you release the mouse button.
+*/
+.dstyle {
+    position: fixed;
+    top: 114px;
+    left: 114px;
+    width: 425px;
+    height: 425px;
+    z-index: 1;
+}
+
+.dstyle:active {
+    visibility: hidden;
+}
